@@ -1,0 +1,16 @@
+﻿@model User
+@{
+    ViewData["Title"] = "Login Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Login</h1>
+    <form method="post">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" type="email" />
+        <label asp-for="Pass"></label>
+        <input asp-for="Pass" type="password" />
+        <button>Log in</button>
+    </form>
+    
+</div>
