@@ -8,7 +8,7 @@ namespace LoginForm.DAO
 {
     public class UserDB : IUser
     {
-        private readonly DbConnectionService _dbConnectionService;
+        private readonly IDbConnectionService _dbConnectionService;
 
         public UserDB(string hostAddress, string hostName, string hostPassword, string databaseName)
         {

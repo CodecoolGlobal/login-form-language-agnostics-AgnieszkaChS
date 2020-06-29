@@ -20,7 +20,6 @@ namespace LoginForm.Controllers
             _userData = new UserDB("localhost", "agnieszkachruszczyksilva", "startthis", "login_form");
         }
 
-        // GET: /<controller>/
         public IActionResult Index()
         {
             return View();
@@ -37,8 +36,10 @@ namespace LoginForm.Controllers
             }
             else
             {
+                ViewBag.Message = "Something went wrong. Insert correct email and password.";
                 return View();
             }
+      
         }
     }
 }
